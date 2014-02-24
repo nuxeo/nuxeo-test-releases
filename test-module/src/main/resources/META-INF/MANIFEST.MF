@@ -4,3 +4,5 @@ Bundle-Name: Nuxeo Agenda
 Bundle-SymbolicName: org.nuxeo.test.releases.module;singleton:=true
 Bundle-Vendor: Nuxeo
 Bundle-Version: 1.0.0
+Nuxeo-Component: OSGI-INF/test-contrib.xml
+

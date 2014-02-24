@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<component name="org.nuxeo.tests.releases.contrib">
+  <documentation>
+    Component with a version to check it's not replaced (see NXBT-689).
+    @author Anahide Tchertchian (at@nuxeo.com)
+  </documentation>
+
+  <extension target="org.nuxeo.ecm.platform.forms.layout.LayoutStore"
+    point="widgettypes">
+
+    <widgetType name="foo">
+      <configuration>
+        <title>Test Foo Widget Type</title>
+        <sinceVersion>5.9.3-SNAPSHOT</sinceVersion>
+      </configuration>
+    </widgetType>
+
+  </extension>
+</component>
