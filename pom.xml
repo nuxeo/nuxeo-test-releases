@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.nuxeo.ecm.distribution</groupId>
+    <artifactId>nuxeo-distribution</artifactId>
+    <version>5.9.3-SNAPSHOT</version>
+  </parent>
+
+  <groupId>org.nuxeo.test.releases</groupId>
+  <artifactId>nuxeo-test-releases</artifactId>
+  <name>Nuxeo Test Releases</name>
+  <packaging>pom</packaging>
+  <description>Nuxeo Test Releases</description>
+  <version>1.0.0-SNAPSHOT</version>
+
+  <modules>
+    <module>test-module</module>
+  </modules>
+
+  <dependencyManagement>
+  </dependencyManagement>
+
+  <scm>
+    <connection>scm:git:git://github.com/nuxeo/nuxeo-test-releases.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:nuxeo/nuxeo-test-releases.git</developerConnection>
+    <url>https://github.com/nuxeo/nuxeo-test-releases</url>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>internal-releases</id>
+      <url>http://maven.in.nuxeo.com/nexus/content/groups/internal-releases</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>internal-snapshots</id>
+      <url>http://maven.in.nuxeo.com/nexus/content/groups/internal-snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>releases</id>
+      <url>http://mavenpriv.in.nuxeo.com/nexus/content/repositories/releases</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>snapshots</id>
+      <url>http://mavenpriv.in.nuxeo.com/nexus/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>internal-releases</id>
+      <url>http://maven.in.nuxeo.com/nexus/content/groups/internal-releases</url>
+      <name>Nuxeo virtual release repository</name>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+    <pluginRepository>
+      <id>internal-snapshots</id>
+      <url>http://maven.in.nuxeo.com/nexus/content/groups/internal-snapshots</url>
+      <name>Nuxeo virtual snapshot repository</name>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <url>http://mavenpriv.in.nuxeo.com/nexus/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <url>http://mavenpriv.in.nuxeo.com/nexus/content/repositories/snapshots</url>
+      <uniqueVersion>true</uniqueVersion>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>
+
