@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>5.9.3-SNAPSHOT</version>
+    <version>5.9.2</version>
   </parent>
 
   <groupId>org.nuxeo.test.releases</groupId>
@@ -13,7 +11,7 @@
   <name>Nuxeo Test Releases</name>
   <packaging>pom</packaging>
   <description>Nuxeo Test Releases</description>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0-I20140225_1549</version>
 
   <modules>
     <module>test-module</module>
@@ -111,4 +109,3 @@
   </distributionManagement>
 
 </project>
-
