@@ -12,7 +12,7 @@
     <widgetType name="foo">
       <configuration>
         <title>Test Foo Widget Type</title>
-        <sinceVersion>5.9.3-SNAPSHOT</sinceVersion>
+        <sinceVersion>5.9.2</sinceVersion>
       </configuration>
     </widgetType>
 
