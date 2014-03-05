@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>5.9.3-SNAPSHOT</version>
+    <version>5.9.2</version>
   </parent>
 
   <groupId>org.nuxeo.test.releases</groupId>
@@ -11,7 +11,7 @@
   <name>Nuxeo Test Releases</name>
   <packaging>pom</packaging>
   <description>Nuxeo Test Releases</description>
-  <version>19-SNAPSHOT</version>
+  <version>19</version>
 
   <modules>
     <module>test-module</module>
